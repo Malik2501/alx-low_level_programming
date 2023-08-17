@@ -3,7 +3,7 @@
 /**
  * main - func prints the numbers from 1-100, but for multiples of 3,
  * Fizz is printed instead of the number, for multiples of 5,
- * buzz , and for multiples of both 3 and 5, FizzBuzz.
+ * Buzz , and for multiples of both 3 and 5, FizzBuzz.
  *
  * Return: Always 0.
  */
@@ -19,7 +19,7 @@ int main(void)
 		else if ((num % 3) == 0)
 			printf("Fizz");
 		else if ((num % 5) == 0)
-			printf("Fuzz");
+			printf("Buzz");
 		else
 			printf("%d", num);
 
