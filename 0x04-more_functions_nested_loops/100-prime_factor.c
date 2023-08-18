@@ -16,6 +16,7 @@ int main(void)
 		if ((prime % 2) == 0)
 		{
 			prime /= 2;
+			continue;
 		}
 
 		for (divisor = 3; divisor < (prime / 2); divisor += 2)
