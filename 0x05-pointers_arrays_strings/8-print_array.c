@@ -4,18 +4,19 @@
  * followed by a new line.
  * @a: This is the input array
  * @n: This is the length of the array
+ * Return: a and n inputs
  */
 void print_array(int *a, int n)
 {
-	int index_of_array;
+	int i;
 
-	for (index_of_array = 0; index_of_array < n; index_of_array++)
+	for (i = 0; i < (n - 1); i++)
 	{
-		printf("%d", a[index_of_array]);
-		if (index_of_array != (n - 1))
-		{
-			printf(",");
-		}
+		printf("%d, ", a[i]);
 	}
-	putchar('\n');
+		if (i == (n - 1))
+		{
+			printf("%d", a[n - 1]);
+		}
+		printf("\n");
 }
