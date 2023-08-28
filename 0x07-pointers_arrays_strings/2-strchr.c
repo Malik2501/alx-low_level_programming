@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strchr: func prints a pointer to the first occurrence of the character c
+ * _strchr - Entry p;oint
  * @s: input value
  * @c: input value
  * Return: Always 0 (Success)
