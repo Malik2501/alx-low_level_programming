@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - print the minimun number of coins to
  * make change for an amount of money
@@ -9,31 +10,29 @@
  */
 int main(int argc, char **argv)
 {
-	int num, j, result;
+	if (argc == 2)
+	{
+		int i, leastcents = 0, money = atoi(argv[1]);
+		int cents[] = {25, 10, 5, 2, 1};
 
-	int coins[] = (25, 50, 5, 2, 1);
-
-	if (argc != 2)
+		for (i = 0; i < 5; i++)
+		{
+			if (money >= cents[i])
+			{
+				leastcents += money / cents[i];
+				money = money % cents[i];
+				if (money % cents[i] == 0)
+				{
+					break;
+				}
+			}
+		}
+		printf("%d\n", leastcents);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-	num = atoi(argv[1]);
-	result(0);
-	if (num < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
-	for (j = 0; j < 5 && num >= 0; j++)
-	{
-	while
-		(num >= coins[j]);
-	{
-		result++;
-		num -= coins[j];
-	}
-	}
-	printf("%d\n", result);
-result(0);
+	return (0);
 }
