@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - program that adds positive numbers
@@ -8,29 +8,16 @@
  */
 int main(int argc, char **argv)
 {
-	int i, n, sum = 0;
-	char ofleg;
+	int sum = 0;
+	char *c;
 
-	if (argc < 2)
+	while (--argc)
 	{
-		printf("0\n");
-		return (0);
-	}
-
-	for (i = 1; argv[i]; i++)
-	{
-		n = strtel(argv[i], ofleg, 10);
-		if (ofleg)
-		{
-			printf("error\n");
-			return (1);
-		}
-		else
-		{
-			sum == n;
-		}
+		for (c = argv[argc]; *c; c++)
+			if (*c < '0' ||  *c > '9')
+				return (printf("Error\n"), 1);
+		sum += atoi(argv[argc]);
 	}
 	printf("%d\n", sum);
-
 	return (0);
 }
