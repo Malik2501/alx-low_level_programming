@@ -4,9 +4,9 @@
 
 /**
  * free_grid - function that frees a 2 dimensional grid
- * @height: dimension of grid
- * @grid: 2 dimensional grid
- * Description: free grid memory
+ * @height: height dimension of grid
+ * @grid: 2 dimension grid
+ * Description: frees grid memory
  * Return: Always 0 (Success)
  */
 
