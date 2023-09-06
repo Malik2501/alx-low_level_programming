@@ -4,9 +4,8 @@
 
 /**
  * alloc_grid - Write a function that frees a 2 dimensional grid
- * @grid: 2d grid
- * @height: input
- * @width: input
+ * @height: height of the array
+ * @width: width of thr array
  * Return: pointer to 2 dimensional array
  */
 
