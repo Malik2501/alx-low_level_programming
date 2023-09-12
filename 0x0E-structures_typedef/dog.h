@@ -8,6 +8,12 @@
  * Description: my  first struct
  */
 
+/**
+ * dog_t - new nane for struct dog
+ */
+
+typedef struct dog dog_t;
+
 struct dog
 {
 	char *name;
