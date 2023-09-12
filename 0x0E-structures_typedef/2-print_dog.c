@@ -2,7 +2,7 @@
 #include "dog.h"
 /**
  * print_dog - function that prints a struct dog
- * @d: the struct type of the new dog
+ * @d: the new dog d of the type struct
  */
 
 void print_dog(struct dog *d)
